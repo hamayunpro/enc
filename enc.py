@@ -116,16 +116,25 @@ def ip():
     log_menu()
  
 	
-        os.system('clear')
-        print logo
-        print '\x1b[1;93m ~~~~ Login menu ~~~~\x1b[1;91m'
-        print 47 * '-'
-        print '\x1b[1;92m[1] Login with FaceBook'
-        print '\x1b[1;92m[2] Login with token'
-        print '\x1b[1;92m[3] Login with cookies'
-        print ''
-        log_menu_s()
 
+	
+        print "   \033[1;36;40m    ╔═════════════════════════════════╗"
+
+	print "   \033[1;36;40m    ║\033[1;32;40m[*] Name\033[1;32;40m: "+nama+"  	   \033[1;36;40m║"                               
+
+	print "   \033[1;36;40m    ║\033[1;34;40m[*] ID  \033[1;34;40m: "+id+"        \033[1;36;40m║"
+
+	print "   \033[1;36;40m    ║\033[1;34;40m[*] Subs\033[1;34;40m: "+sub+"                      \033[1;36;40m║"
+
+	print "   \033[1;36;40m    ╚═════════════════════════════════╝"
+
+	print "\033[1;32;40m[1] \033[1;33;40m══Start Cloning"	
+
+	print "\033[1;32;40m[2] \033[1;33;40m══Update badshah"																														
+
+	print "\033[1;32;40m[0] \033[1;33;40m══Log out"
+
+	pilih()
       
 def log_menu_s():
     s = raw_input(' \x1b[1;97m\xe2\x95\xb0\xe2\x94\x80Mr-Robot\xe2\x9e\xa4 ')

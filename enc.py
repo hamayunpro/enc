@@ -519,7 +519,7 @@ def brute():
                             ceks.write(email + ' | ' + pw + '\n')
                             ceks.close()
                             print '\n\033[1;97m[+] \033[1;97mFounded.'
-                            print  "\033[1;36;40m ════════════════════════════════════════════════"
+                            print ' ------------------------------------------ '
                             print '\033[1;97m[!] \033[1;97mAccount Maybe Checkpoint'
                             print '\033[1;97m[\xe2\x9e\xb9] \033[1;97mUsername \033[1;97m:\033[1;97m ' + email
                             print '\033[1;97m[\xe2\x9e\xb9] \033[1;97mPassword \033[1;97m:\033[1;97m ' + pw

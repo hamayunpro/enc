@@ -280,11 +280,11 @@ def super():
 		login()
 	os.system('clear')
 	print logo
-	print '\x1b[1;92m[1]══Hack From Friend List"
-        print '\x1b[1;92m[2]══Hack From Public ID"
-	print '\x1b[1;92m[3]══Hack Bruteforce"
-	print '\x1b[1;92m[4]══Hack From File"
-	print '\x1b[1;92m[0]══Back"
+	print "\x1b[1;92m[1]══Hack From Friend List"
+        print "\x1b[1;92m[2]══Hack From Public ID"
+	print "\x1b[1;92m[3]══Hack Bruteforce"
+	print "\x1b[1;92m[4]══Hack From File"
+	print "\x1b[1;92m[0]══Back"
 	pilih_super()
 
 def pilih_super():

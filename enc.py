@@ -114,7 +114,7 @@ def ip():
     print ' Loading ...'
     time.sleep(1)
 
-    
+  #logo
        print logo
        print '\x1b[1;93m ~~~~ Login menu ~~~~\x1b[1;91m'
        print 47 * '-'

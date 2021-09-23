@@ -113,17 +113,9 @@ def ip():
     time.sleep(1)
     print ' Loading ...'
     time.sleep(1)
-
 	log_menu()
-	except (KeyError,IOError):
-
-		os.system('clear')
-
-		print logo
-
-		print 50*"\033[1;96m▪"
+	
 		
-		def log_menu():
     try:
         t_check = open('access_token.txt', 'r')
         menu()

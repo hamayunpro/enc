@@ -296,7 +296,7 @@ def pilih_super():
 		os.system('clear')
 		print logo
 
-		jalan('\033[1;97m[✺] Getting IDs \033[1;97m...')
+		jalan('\033[1;97m[$] Getting IDs \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for s in z['data']:

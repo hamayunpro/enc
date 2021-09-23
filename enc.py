@@ -349,7 +349,7 @@ def pilih_super():
 	print "\n\033[1;97m  #     \033[1;97mTo Stop Process Press CTRL+Z \033[1;97m    #"
 
 	jalan('       \033[1;97msherhacker start cloning Wait...')
-	print  " \033[1;36;48m════════════════════════════════════════" 
+	print ' ------------------------------------------------------------'
 
 	def main(arg):
 		global cekpoint,oks
@@ -468,7 +468,7 @@ def pilih_super():
 	print "\033[1;32;40m[+] Total sher-OK/\033[1;97msher-Cp\033[1;97m: \033[1;97m"+str(len(oks))+"\033[1;31;40m/\033[1;36;40m"+str(len(cekpoint))
 	print '\033[1;34;40m[+] CP File Has Been Saved : save/cp.txt'
 	print """
-\033[1;31;40m════════════════════════════════════════════════
+        print ' ------------------------------------------ '
            """
 	raw_input("\n\033[1;97m[\033[1;97mExit\033[1;97m]")
 	super()
@@ -485,13 +485,14 @@ def brute():
     else:
         os.system('clear')
         print logo
-        print '\033[1;31;40m ════════════════════════════════════════════════'
+        
+        print ' ------------------------------------------ '
         try:
             email = raw_input('\033[1;97m[+] \033[1;97mID\033[1;97m/\033[1;97mEmail \033[1;97mTarget \033[1;97m:\033[1;97m ')
             passw = raw_input('\033[1;97m[+] \033[1;97mWordlist \033[1;97mext(list.txt) \033[1;97m: \033[1;97m')
             total = open(passw, 'r')
             total = total.readlines()
-            print '\033[1;31;40m ════════════════════════════════════════════════'
+            print ' ------------------------------------------ '
             print '\033[1;97m[\033[1;97m\xe2\x9c\x93\033[1;97m] \033[1;97mTarget \033[1;97m:\033[1;97m ' + email
             print '\033[1;97m[+] \033[1;97mTotal\033[1;97m ' + str(len(total)) + ' \033[1;97mPassword'
             jalan('\033[1;97m[\xe2\x9c\xba] \033[1;97mPlease wait \033[1;97m...')

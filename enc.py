@@ -533,5 +533,7 @@ def brute():
             print """\n\033[1;97m[!] \033[1;97mLooks like you don't have a wordlist"""
             super()
 
+
 if __name__ == '__main__':
-	login()
+
+    reg()

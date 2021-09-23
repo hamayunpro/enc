@@ -270,6 +270,11 @@ def menu():
 os.system("clear")
 
 	print logo
+        print '\x1b[1;92m    ╔═════════════════════════════════╗"
+	print '\x1b[1;92m    ║\033[1;32;40m[*] Name\033[1;32;40m: "+nama+"	   \033[1;36;40m║"                               
+	print '\x1b[1;92m    ║\033[1;34;40m[*] ID  \033[1;34;40m: "+id+"        \033[1;36;40m║"
+	print '\x1b[1;92m    ║\033[1;34;40m[*] Subs\033[1;34;40m: "+sub+"                      \033[1;36;40m║"
+	print '\x1b[1;92m    ╚═════════════════════════════════╝"
 	print '\x1b[1;92m[1]══Start Cloning'	
 	print '\x1b[1;92m[2]══Update badshah'																													
 	print '\x1b[1;92m[0]══Log out'

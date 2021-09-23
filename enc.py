@@ -113,8 +113,9 @@ def ip():
     time.sleep(1)
     print ' Loading ...'
     time.sleep(1)
-
+    log_menu()
  
+	
  def log_menu():
     try:
         t_check = open('access_token.txt', 'r')

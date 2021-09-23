@@ -116,17 +116,18 @@ def ip():
 
  
  
-       print("")
-       print logo
-       print '\x1b[1;93m ~~~~ Login menu ~~~~\x1b[1;91m'
-       print 47 * '-'
-       print '\x1b[1;92m[1] Login with FaceBook'
-       print '\x1b[1;92m[2] Login with token'
-       print '\x1b[1;92m[3] Login with cookies'
-       print ''
-       log_menu_s()
-
-
+      def log_menu(): 		
+    try
+        print logo
+        print '\x1b[1;93m ~~~~ Login menu ~~~~\x1b[1;91m'
+        print 47 * '-'
+        print '\x1b[1;92m[1] Login with FaceBook'
+        print '\x1b[1;92m[2] Login with token'
+        print '\x1b[1;92m[3] Login with cookies'
+        print ''
+        log_menu_s()
+       
+      
 def log_menu_s():
     s = raw_input(' \x1b[1;97m\xe2\x95\xb0\xe2\x94\x80Mr-Robot\xe2\x9e\xa4 ')
     if s == '1':

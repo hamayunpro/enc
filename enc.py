@@ -267,7 +267,9 @@ def menu():
     print 47 * '-'
     print ' \x1b[1;93m Active token: \x1b[1;91m' + tok
     print ' ------------------------------------------ '
-		
+os.system("clear")
+
+	print logo
 	print '\x1b[1;92m[1]══Start Cloning'	
 	print '\x1b[1;92m[2]══Update badshah'																													
 	print '\x1b[1;92m[0]══Log out'

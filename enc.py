@@ -267,51 +267,7 @@ def menu():
     print 47 * '-'
     print ' \x1b[1;93m Active token: \x1b[1;91m' + tok
     print ' ------------------------------------------ '
-os.system("clear")
 
-	print logo
-        print '\x1b[1;92m    ╔═════════════════════════════════╗"
-	print '\x1b[1;92m    ║\033[1;32;40m[*] Name\033[1;32;40m: "+nama+"	   \033[1;36;40m║"                               
-	print '\x1b[1;92m    ║\033[1;34;40m[*] ID  \033[1;34;40m: "+id+"        \033[1;36;40m║"
-	print '\x1b[1;92m    ║\033[1;34;40m[*] Subs\033[1;34;40m: "+sub+"                      \033[1;36;40m║"
-	print '\x1b[1;92m    ╚═════════════════════════════════╝"
-	print '\x1b[1;92m[1]══Start Cloning'	
-	print '\x1b[1;92m[2]══Update badshah'																													
-	print '\x1b[1;92m[0]══Log out'
-	pilih()
-
-def pilih():
-	unikers = raw_input("\n\033[1;31;40m>>> \033[1;35;40m")
-	if unikers =="":
-		print "\033[1;97mFill in correctly"
-		pilih()
-	elif unikers =="1":
-		super()
-	elif unikers =="2":
-		os.system('clear')
-		print logo
-		print " \033[1;36;40m●════════════════════════◄SHER BADSHAH►════════════════════════●\n"
-		os.system('git pull origin master')
-		raw_input('\n\033[1;97m[ \033[1;97mBack \033[1;97m]')
-		menu()
-	elif unikers =="0":
-		jalan('Token Removed')
-		os.system('rm -rf login.txt')
-		keluar()
-	else:
-		print "\033[1;97mFill in correctly"
-		pilih()
-
-def super():
-	global toket
-	os.system('clear')
-	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		print"\033[1;97mToken invalid"
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		login()
 	os.system('clear')
 	print logo
 	print '\x1b[1;92m[1]══Hack From Friend List"

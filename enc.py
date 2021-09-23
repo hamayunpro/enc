@@ -116,11 +116,6 @@ def ip():
     log_menu()
  
 	
-  def log_menu():
-    try:
-        t_check = open('access_token.txt', 'r')
-        menu()
-    except (KeyError, IOError):
         os.system('clear')
         print logo
         print '\x1b[1;93m ~~~~ Login menu ~~~~\x1b[1;91m'

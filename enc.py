@@ -309,12 +309,12 @@ def pilih_super():
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;31;40m[✺] Name : "+op["name"]
+			print"\033[1;31;40m[#] Name : "+op["name"]
 		except KeyError:
-			print"\033[1;97m[✺] ID Not Found!"
+			print"\033[1;97m[#] ID Not Found!"
 			raw_input("\n\033[1;97m[\033[1;97mBack\033[1;97m]")
 			super()
-		print"\033[1;35;40m[✺] Getting IDs..."
+		print"\033[1;35;40m[#] Getting IDs..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:

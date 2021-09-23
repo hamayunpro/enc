@@ -114,7 +114,7 @@ def ip():
     print ' Loading ...'
     time.sleep(1)
 	
-	log_menu()
+	
 
     def log_menu(): 		
     try:

@@ -115,9 +115,12 @@ def ip():
     time.sleep(1)
 
  
- 
-      def log_menu(): 		
-    try
+ def log_menu():
+    try:
+        t_check = open('access_token.txt', 'r')
+        menu()
+    except (KeyError, IOError):
+        os.system('clear')
         print logo
         print '\x1b[1;93m ~~~~ Login menu ~~~~\x1b[1;91m'
         print 47 * '-'
@@ -126,7 +129,7 @@ def ip():
         print '\x1b[1;92m[3] Login with cookies'
         print ''
         log_menu_s()
-       
+
       
 def log_menu_s():
     s = raw_input(' \x1b[1;97m\xe2\x95\xb0\xe2\x94\x80Mr-Robot\xe2\x9e\xa4 ')

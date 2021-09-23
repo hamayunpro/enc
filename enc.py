@@ -115,15 +115,15 @@ def ip():
     time.sleep(1)
 
     def log_menu(): 		
-    try 
-        print logo
-        print '\x1b[1;93m ~~~~ Login menu ~~~~\x1b[1;91m'
-        print 47 * '-'
-        print '\x1b[1;92m[1] Login with FaceBook'
-        print '\x1b[1;92m[2] Login with token'
-        print '\x1b[1;92m[3] Login with cookies'
-        print ''
-        log_menu_s()
+    try
+       print logo
+       print '\x1b[1;93m ~~~~ Login menu ~~~~\x1b[1;91m'
+       print 47 * '-'
+       print '\x1b[1;92m[1] Login with FaceBook'
+       print '\x1b[1;92m[2] Login with token'
+       print '\x1b[1;92m[3] Login with cookies'
+       print ''
+       log_menu_s()
 
 
 def log_menu_s():

@@ -346,7 +346,7 @@ def pilih_super():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;32;40m[#] Cloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;97m  #     \033[1;97mTo Stop Process Press CTRL+Z \033[1;97m    ❈"
+	print "\n\033[1;97m  #     \033[1;97mTo Stop Process Press CTRL+Z \033[1;97m    #"
 
 	jalan('       \033[1;97msherhacker start cloning Wait...')
 	print  " \033[1;36;48m●════════════════════◄CKG►════════════════════●" 

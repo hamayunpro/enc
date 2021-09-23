@@ -268,6 +268,16 @@ def menu():
     print ' \x1b[1;93m Active token: \x1b[1;91m' + tok
     print ' ------------------------------------------ '
 
+def super():
+	global toket
+	os.system('clear')
+	try:
+		toket=open('login.txt','r').read()
+	except IOError:
+		print"\033[1;97mToken invalid"
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		login()
 	os.system('clear')
 	print logo
 	print '\x1b[1;92m[1]══Hack From Friend List"

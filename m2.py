@@ -1,7 +1,7 @@
 #coding=utf-8
 #!/usr/bin/python2
 #coding=utf-8
-#originally written (SYED ZADA)
+#originally written Ubaid ullah
 try:
 	import os,sys,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string
 	from multiprocessing.pool import ThreadPool
@@ -17,16 +17,11 @@ bd = random.randint(2e7, 3e7)
 sim = random.randint(2e4, 4e4)
 header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT', 'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.3','x-fb-connection-type': 'unknown','content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 logo = """
-     \033[1;92m      db    db d8888b.  .d8b.  d888888b d8888b.  .d88b.  
-
+ \033[1;92mdb    db   db d8888b.  .   d8b.  d888888b d8888b.  .d88b.  
 \033[1;93m 88    88 88  `8D d8' `8b   `88'   88  `8D .8P  Y8. 
-
 \033[1;94m 88    88 88oooY' 88ooo88    88    88   88 88    88 
-
 \033[1;92m 88    88 88~~~b. 88~~~88    88    88   88 88    88 
-
 \033[1;93m 88b  d88 88   8D 88   88   .88.   88  .8D `8b  d8' 
-
 \033[1;95m ~Y8888P' Y8888P' YP   YP Y888888P Y8888D'  `Y88P'  
 \033[1;93m-----------------------------------------------------
  \033[1;93m(*)\033[1;92m Developer: Ubaid Ullah

@@ -61,7 +61,7 @@ def step_main():
 	print("")
 	time.sleep(1)
 	username = raw_input("[!] Tool Password : ")
-	if username =="ubaido":
+	if username =="ahmado":
 		print("")
 		time.sleep(1)
 		print("\033[1;92mTool Password is correct").center(50)

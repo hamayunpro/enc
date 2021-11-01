@@ -17,7 +17,7 @@ bd = random.randint(2e7, 3e7)
 sim = random.randint(2e4, 4e4)
 header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT', 'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.3','x-fb-connection-type': 'unknown','content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 logo = """
- \033[1;92mdb    db   db d8888b.  .   d8b.  d888888b d8888b.  .d88b.  
+ \033[1;92mdb    db db d888 8b.8b8b. Y88888P.d888888b d8888b.
 \033[1;93m 88    88 88  `8D d8' `8b   `88'   88  `8D .8P  Y8. 
 \033[1;94m 88    88 88oooY' 88ooo88    88    88   88 88    88 
 \033[1;92m 88    88 88~~~b. 88~~~88    88    88   88 88    88 
@@ -25,7 +25,7 @@ logo = """
 \033[1;95m ~Y8888P' Y8888P' YP   YP Y888888P Y8888D'  `Y88P'  
 \033[1;93m-----------------------------------------------------
  \033[1;93m(*)\033[1;92m Developer: Ubaid Ullah
- \033[1;93m(*)\033[1;92m WhatsApp :   +971 50 965 3974
+ \033[1;93m(*)\033[1;92m WhatsApp : +971 50 965 3974
  \033[1;93m(*)\033[1;92m Github   : https://github.com/ubaido/ahmado
 \033[1;93m-----------------------------------------------------
 """
